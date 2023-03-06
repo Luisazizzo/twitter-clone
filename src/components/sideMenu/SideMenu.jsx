@@ -8,7 +8,11 @@ const SideMenu = () => {
         src="https://img.icons8.com/color/256/twitter--v1.png"
         alt="twitter"
       />
-      <img className="sparkling" src="../../assets/stars.png" alt="sparkling" />
+      <img
+        className="sparkling"
+        src="https://github.com/Luisazizzo/twitter-clone/blob/main/src/assets/stars.png?raw=true"
+        alt="sparkling"
+      />
     </div>
   );
 };

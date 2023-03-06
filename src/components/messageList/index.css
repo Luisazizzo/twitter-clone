@@ -1,0 +1,30 @@
+.MessageList {
+  display: flex;
+  padding: 10px;
+}
+.MessageList__photo {
+  background-color: #01b5f180;
+  border-radius: 50%;
+}
+.MessageList img {
+  width: 45px;
+  height: 45px;
+  margin: 0 6px;
+}
+.MessageList__text .MessageList__span-email {
+  color: lightgray;
+}
+.MessageList__text p {
+  margin: 3px 0;
+}
+.MessageList__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.MessageList__icons img {
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+}

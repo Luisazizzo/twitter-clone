@@ -1,0 +1,20 @@
+.Content {
+  margin-bottom: 45px;
+}
+.Content .Content__twit {
+  background-color: #01b5f1;
+  border: none;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  cursor: pointer;
+}
+.Content .Content__twit img {
+  width: 20px;
+  filter: invert();
+}

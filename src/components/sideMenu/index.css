@@ -1,0 +1,11 @@
+.SideMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.SideMenu img {
+  width: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.IconsFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  height: 25px;
+  border-top: 1px solid rgba(128, 128, 128, 0.398);
+  position: fixed;
+  width: 100vw;
+  bottom: 0px;
+  background-color: #fff;
+}
+
+.IconsFooter img {
+  width: 25px;
+  cursor: pointer;
+}

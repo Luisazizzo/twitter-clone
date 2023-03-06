@@ -8,11 +8,7 @@ const SideMenu = () => {
         src="https://img.icons8.com/color/256/twitter--v1.png"
         alt="twitter"
       />
-      <img
-        className="sparkling"
-        src="https://img.icons8.com/ios/256/sparkling.png"
-        alt="sparkling"
-      />
+      <img className="sparkling" src="../../assets/stars.png" alt="sparkling" />
     </div>
   );
 };

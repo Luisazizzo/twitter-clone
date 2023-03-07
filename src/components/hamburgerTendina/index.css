@@ -1,0 +1,41 @@
+.HamburgerTendina {
+  width: 200px;
+  height: calc(100vh - 10%);
+  position: fixed;
+  top: 50px;
+  left: -300px;
+  background-color: #fff;
+  padding-left: 20px;
+  border-right: 1px solid lightgrey;
+}
+.show {
+  left: 0;
+}
+.profilo {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.nome {
+  font-size: 18px;
+}
+.email {
+  color: lightgrey;
+  font-size: 14px;
+}
+.HamburgerTendina ul li img {
+  width: 25px;
+  height: 25px;
+}
+.HamburgerTendina ul {
+  margin-top: 40px;
+  padding: 0 30px;
+  list-style-type: none;
+}
+.HamburgerTendina ul li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}

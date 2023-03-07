@@ -1,10 +1,12 @@
 import MessageList from "../messageList";
 import messageList from "../../mock/messageList";
+import Header from "../header";
 import "./index.css";
 
 const Content = () => {
   return (
     <div className="Content">
+      <Header />
       {messageList.map((message) => (
         <MessageList messageData={message} />
       ))}

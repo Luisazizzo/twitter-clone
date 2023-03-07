@@ -18,3 +18,8 @@
   width: 20px;
   filter: invert();
 }
+@media screen and (min-width: 800px) {
+  .Content__twit {
+    display: none;
+  }
+}

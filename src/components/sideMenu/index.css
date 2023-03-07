@@ -1,11 +1,21 @@
 .SideMenu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 10px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
 }
 
 .SideMenu img {
   width: 30px;
   cursor: pointer;
+  margin-right: 22px;
+}
+@media screen and (min-width: 800px) {
+  .SideMenu {
+    display: none;
+  }
 }

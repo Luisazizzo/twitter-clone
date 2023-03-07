@@ -1,0 +1,10 @@
+.SideTrendsList {
+  margin-bottom: 20px;
+}
+.SideTrendsList p {
+  margin: 0;
+}
+.SideTrendsList .tweets {
+  font-size: 14px;
+  color: lightgray;
+}

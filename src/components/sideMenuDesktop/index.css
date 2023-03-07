@@ -1,0 +1,45 @@
+.SideMenuDesktop {
+  width: 25%;
+  border-right: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.twitter img {
+  width: 30px !important;
+  height: 30px !important;
+}
+.SideMenuDesktop ul li img {
+  width: 25px;
+  height: 25px;
+}
+.SideMenuDesktop ul {
+  padding: 0 30px;
+  list-style-type: none;
+}
+.SideMenuDesktop ul li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+li:hover {
+  color: #01b5f1;
+}
+.SideMenuDesktop button {
+  background-color: #01b5f1;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 12px 24px;
+  width: 160px;
+  border-radius: 25px;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 800px) {
+  .SideMenuDesktop {
+    display: block;
+  }
+}

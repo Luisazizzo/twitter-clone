@@ -1,6 +1,6 @@
 import "./index.css";
 
-const SideMenuDesktop = () => {
+const SideMenuDesktop = ({ setChat }) => {
   return (
     <div className="SideMenuDesktop">
       <ul>
@@ -46,7 +46,7 @@ const SideMenuDesktop = () => {
           <p>Bookmarks</p>
         </li>
       </ul>
-      <button>Tweet</button>
+      <button onClick={() => setChat(true)}>Tweet</button>
     </div>
   );
 };

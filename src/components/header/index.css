@@ -2,8 +2,8 @@
   display: none;
 }
 .Header img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 .Header__up {
@@ -37,6 +37,11 @@
   height: 40px;
   border: 1px solid;
   border-radius: 50%;
+}
+
+.sparkling {
+  color: #01b5f1;
+  font-size: 25px;
 }
 
 @media screen and (min-width: 800px) {

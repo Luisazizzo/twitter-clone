@@ -1,5 +1,6 @@
 import { useState } from "react";
 import HamburgerTendina from "../hamburgerTendina/HamburgerTendina";
+import { HiOutlineSparkles } from "react-icons/Hi";
 import "./index.css";
 
 const SideMenu = () => {
@@ -17,11 +18,7 @@ const SideMenu = () => {
         src="https://img.icons8.com/color/256/twitter--v1.png"
         alt="twitter"
       />
-      <img
-        className="sparkling"
-        src="https://raw.githubusercontent.com/Luisazizzo/twitter-clone/main/src/assets/stars.png"
-        alt="sparkling"
-      />
+      <HiOutlineSparkles className="sparkling-mobile" />
     </div>
   );
 };

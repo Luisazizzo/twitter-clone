@@ -1,16 +1,25 @@
+import { useEffect, useState } from "react";
 import "./index.css";
 
 const MessageList = ({ messageData }) => {
+  const [userData, setUserData] = useState({});
+
+  useEffect(() => {
+    fetch(`https://dummyjson.com/users/${messageData.userId}`)
+      .then((res) => res.json())
+      .then((data) => setUserData(data));
+  }, []);
+
   return (
     <div className="MessageList">
       <img
         className="MessageList__photo"
-        src={messageData.photo}
-        alt={messageData.userName}
+        src={userData.image}
+        alt={userData.username}
       />
       <div className="MessageList__text">
-        <span>{messageData.userName}</span>
-        <span className="MessageList__span-email">{messageData.email}</span>
+        <span>{userData.username}</span>
+        <span className="MessageList__span-email">{userData.email}</span>
         <p>{messageData.body}</p>
         <div className="MessageList__icons">
           <img

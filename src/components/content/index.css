@@ -1,5 +1,8 @@
 .Content {
   margin-bottom: 45px;
+  height: 100vh;
+  overflow: auto;
+  transition: all 0.4s;
 }
 .Content .Content__twit {
   background-color: #01b5f1;

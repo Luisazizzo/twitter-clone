@@ -1,8 +1,22 @@
 import { useEffect, useState } from "react";
+import { FiMessageCircle, FiEdit, FiHeart, FiSend } from "react-icons/fi";
 import "./index.css";
 
-const MessageList = ({ messageData }) => {
+const MessageList = ({ messageData, setModalPut }) => {
+  const [likeHeart, setLikeHeart] = useState(false);
   const [userData, setUserData] = useState({});
+
+  const toggleHeart = () => {
+    setLikeHeart((prev) => !prev);
+  };
+
+  const toggleModal = () => {
+    setModalPut({
+      postId: messageData.id,
+      message: messageData.body,
+      name: userData.username,
+    });
+  };
 
   useEffect(() => {
     fetch(`https://dummyjson.com/users/${messageData.userId}`)
@@ -22,19 +36,17 @@ const MessageList = ({ messageData }) => {
         <span className="MessageList__span-email">{userData.email}</span>
         <p>{messageData.body}</p>
         <div className="MessageList__icons">
-          <img
-            src="https://img.icons8.com/external-those-icons-lineal-those-icons/256/external-Chat-Bubble-messages-and-chat-those-icons-lineal-those-icons-10.png"
-            alt="chat"
-          />
-          <img
-            src="https://img.icons8.com/material-sharp/256/sorting-arrows-horizontal.png"
-            alt="arrow"
-          />
-          <img
-            src="https://img.icons8.com/ios-glyphs/256/hearts.png"
-            alt="heart"
-          />
-          <img src="https://img.icons8.com/ios/256/upload.png" alt="upload" />
+          <FiMessageCircle className="message" />
+          <FiEdit className="edit" onClick={toggleModal} />
+          <div onClick={toggleHeart}>
+            {likeHeart ? (
+              <FiHeart className="heart-red" />
+            ) : (
+              <FiHeart className="heart" />
+            )}
+          </div>
+
+          <FiSend className="send" />
         </div>
       </div>
     </div>

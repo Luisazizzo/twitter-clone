@@ -37,6 +37,13 @@ li:hover {
   border-radius: 25px;
   margin-left: 12px;
 }
+.home,
+.exsplore,
+.notifications,
+.messages,
+.bookmarks {
+  font-size: 20px;
+}
 
 @media screen and (min-width: 800px) {
   .SideMenuDesktop {

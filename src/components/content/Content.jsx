@@ -8,9 +8,8 @@ import Header from "../header";
 import "./index.css";
 import { useState, useEffect, useRef } from "react";
 
-const Content = ({ setChat }) => {
+const Content = ({ setChat, setModalPut }) => {
   const [InputValue, setInputValue] = useState("");
-  const headerRef = useRef(null);
   const [messageList, setMessageList] = useState([]);
 
   useEffect(() => {
@@ -20,21 +19,15 @@ const Content = ({ setChat }) => {
   }, []);
 
   const filteredMessage = () =>
-    messageList.filter((msg) => msg.body.includes(InputValue.toUpperCase()));
+    messageList.filter((msg) =>
+      msg.body.toUpperCase().includes(InputValue.toUpperCase())
+    );
 
   return (
-    <div
-      ref={headerRef}
-      className="Content"
-      onScroll={() =>
-        headerRef.current.scrollTop >= 1
-          ? (headerRef.current.style.transform = "translateY(-70px)")
-          : (headerRef.current.style.transform = "translateY(0)")
-      }
-    >
+    <div className="Content">
       <Header setInputValue={setInputValue} InputValue={InputValue} />
-      {filteredMessage().map((message) => (
-        <MessageList messageData={message} />
+      {filteredMessage().map((message, i) => (
+        <MessageList messageData={message} setModalPut={setModalPut} key={i} />
       ))}
       <button className="Content__twit" onClick={() => setChat(true)}>
         +

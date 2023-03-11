@@ -1,14 +1,13 @@
+import { FiArrowLeft } from "react-icons/fi";
 import "./index.css";
 
 const ChatTweet = ({ setChat }) => {
   return (
     <div className="ChatTweet">
       <h1>Chat</h1>
-      <textarea className="chat"></textarea>
+      <textarea></textarea>
       <button>invia</button>
-      <p className="arrow" onClick={() => setChat(false)}>
-        {"<-"}
-      </p>
+      <FiArrowLeft className="arrowLeft" onClick={() => setChat(false)} />
     </div>
   );
 };

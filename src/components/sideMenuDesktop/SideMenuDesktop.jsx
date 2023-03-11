@@ -1,3 +1,10 @@
+import {
+  FiHome,
+  FiBookmark,
+  FiMessageSquare,
+  FiBell,
+  FiCpu,
+} from "react-icons/fi";
 import "./index.css";
 
 const SideMenuDesktop = ({ setChat }) => {
@@ -11,38 +18,23 @@ const SideMenuDesktop = ({ setChat }) => {
           />
         </li>
         <li>
-          <img
-            src="https://img.icons8.com/pulsar-line/256/home-page.png"
-            alt="home"
-          />
+          <FiHome className="home" />
           <p>Home</p>
         </li>
         <li>
-          <img
-            src="https://img.icons8.com/material-rounded/256/hashtag-large.png"
-            alt="explore"
-          />
+          <FiCpu className="explore" />
           <p>Explore</p>
         </li>
         <li>
-          <img
-            src="https://img.icons8.com/material/256/jingle-bell.png"
-            alt="notifications"
-          />
+          <FiBell className="notifications" />
           <p>Notifications</p>
         </li>
         <li>
-          <img
-            src="https://img.icons8.com/ios-glyphs/256/filled-chat.png"
-            alt="messages"
-          />
+          <FiMessageSquare className="messages" />
           <p>Messages</p>
         </li>
         <li>
-          <img
-            src="https://img.icons8.com/material/256/bookmark-outline.png"
-            alt="bookmarks"
-          />
+          <FiBookmark className="bookmarks" />
           <p>Bookmarks</p>
         </li>
       </ul>

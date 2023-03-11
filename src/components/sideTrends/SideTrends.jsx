@@ -8,7 +8,7 @@ const SideTrends = () => {
 
   const filteredTrends = () =>
     trendsList.filter((trend) =>
-      trend.type.includes(inputTrends.toUpperCase())
+      trend.type.toUpperCase().includes(inputTrends.toUpperCase())
     );
   return (
     <div className="SideTrends">
@@ -19,8 +19,8 @@ const SideTrends = () => {
         placeholder="Search Twitter"
       />
       <h3>Trends for you</h3>
-      {filteredTrends().map((trend) => (
-        <SideTrendsList trendsData={trend} />
+      {filteredTrends().map((trend, i) => (
+        <SideTrendsList trendsData={trend} key={i} />
       ))}
     </div>
   );

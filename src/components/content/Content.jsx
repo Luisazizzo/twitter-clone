@@ -1,12 +1,7 @@
-// Esercizio 09-03-2023
-// Diciamo che ho replicato quanto visto a lezione,
-// perchè non sono riuscita a incrementarlo in qualche altro modo.
-// Il mio useRef allo scrollTop del header va a meno -70px.
-
 import MessageList from "../messageList";
 import Header from "../header";
 import "./index.css";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const Content = ({ setChat, setModalPut }) => {
   const [InputValue, setInputValue] = useState("");

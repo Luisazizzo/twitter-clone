@@ -1,4 +1,4 @@
-// import { HiOutlineSparkles } from "react-icons/Hi";
+import { TbSparkles } from "react-icons/tb";
 import "./index.css";
 
 const Header = ({ setInputValue, InputValue }) => {
@@ -6,7 +6,7 @@ const Header = ({ setInputValue, InputValue }) => {
     <div className="Header">
       <div className="Header__up">
         <p>Home</p>
-        {/* <HiOutlineSparkles className="sparkling" /> */}
+        <TbSparkles className="sparkling" />
       </div>
       <div className="Header__down">
         <img

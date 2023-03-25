@@ -5,6 +5,16 @@ import "./index.css";
 const MessageList = ({ messageData, setModalPut }) => {
   const [likeHeart, setLikeHeart] = useState(false);
   const [userData, setUserData] = useState({});
+  const [likeRandom, setLikeRandom] = useState(
+    0 + Math.floor(Math.random() * 1001)
+  );
+
+  const addLike = () => {
+    setLikeRandom(likeRandom + 1);
+  };
+  const removeLike = () => {
+    setLikeRandom(likeRandom - 1);
+  };
 
   const toggleHeart = () => {
     setLikeHeart((prev) => !prev);
@@ -39,10 +49,11 @@ const MessageList = ({ messageData, setModalPut }) => {
           <FiMessageCircle className="message" />
           <FiEdit className="edit" onClick={toggleModal} />
           <div onClick={toggleHeart}>
+            <p>{likeRandom}</p>
             {likeHeart ? (
-              <FiHeart className="heart-red" />
+              <FiHeart onClick={removeLike} className="heart-red" />
             ) : (
-              <FiHeart className="heart" />
+              <FiHeart onClick={addLike} className="heart" />
             )}
           </div>
 

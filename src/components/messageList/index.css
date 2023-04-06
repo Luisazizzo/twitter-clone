@@ -1,6 +1,7 @@
 .MessageList {
   display: flex;
   margin-top: 10px;
+  padding: 0 20px;
 }
 .MessageList__photo {
   background-color: #01b5f180;
@@ -19,7 +20,7 @@
 }
 .MessageList__icons {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   cursor: pointer;
 }
@@ -33,6 +34,12 @@
   fill: red;
   font-size: 22px;
   stroke: none;
+}
+.toggle-like {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 800px) {

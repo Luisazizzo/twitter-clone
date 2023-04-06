@@ -48,7 +48,7 @@ const MessageList = ({ messageData, setModalPut }) => {
         <div className="MessageList__icons">
           <FiMessageCircle className="message" />
           <FiEdit className="edit" onClick={toggleModal} />
-          <div onClick={toggleHeart}>
+          <div className="toggle-like" onClick={toggleHeart}>
             <p>{likeRandom}</p>
             {likeHeart ? (
               <FiHeart onClick={removeLike} className="heart-red" />

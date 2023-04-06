@@ -1,12 +1,13 @@
 .SideTrends {
   border-left: 1px solid lightgrey;
-  width: 100%;
+  width: 320px;
   height: 100vh;
   padding: 12px;
   display: none;
   overflow: auto;
 }
 .SideTrends input {
+  margin-bottom: 20px;
   padding: 0 0 0 10px;
   height: 28px;
   border: 0;
